@@ -5,9 +5,6 @@
       "name" : "Fattore Produttivo",
       "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Costi Totali.Fattore Produttivo"
     }, {
-      "name" : "Fattore Produttivo#1",
-      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo"
-    }, {
       "name" : "Fattore Produttivo - Livello 1",
       "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 1"
     }, {

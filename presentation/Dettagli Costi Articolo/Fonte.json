@@ -1,0 +1,12 @@
+{
+  "presentationTable" : {
+    "name" : "Fonte",
+    "presentationColumns" : [ {
+      "name" : "Fonte",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Dettaglio Costi Articolo.Fonte"
+    }, {
+      "name" : "Sottofonte",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Dettaglio Costi Articolo.Sottofonte"
+    } ]
+  }
+}

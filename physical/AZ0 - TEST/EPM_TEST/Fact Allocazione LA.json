@@ -1,0 +1,45 @@
+{
+  "physicalTable": {
+    "name": "Fact Allocazione LA",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.VST_LA_ALLOC_OUT",
+    "joins": [      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Anno",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Allocazione LA.YEARS",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Anno.ANNO"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Aziende",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Allocazione LA.ENTITY",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Aziende.COD_AZIENDA"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Codice CDC",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Allocazione LA.CDC",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Codice CDC.COD_CDC"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Rule",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Allocazione LA.PCM_RULE",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Rule.RULENAME"
+          }
+        ]
+      }
+    ],
+    "additionalKeys": [
+      [
+        "CDC",
+        "YEARS"
+      ]
+    ]
+  }
+}

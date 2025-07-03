@@ -1,0 +1,62 @@
+{
+  "physicalTable" : {
+    "name" : "VST_COSTI_COAN",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ID_INVIO_FILE",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "ANNO",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : false
+    }, {
+      "name" : "PERIODO",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : false
+    }, {
+      "name" : "VERSIONE_PERIODO",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "COD_AZIENDA",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : false
+    }, {
+      "name" : "COD_STRUTTURA",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : false
+    }, {
+      "name" : "COD_CDC",
+      "dataType" : "VARCHAR",
+      "length" : 5,
+      "nullable" : false
+    }, {
+      "name" : "COD_PROGRESSIVO",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : false
+    }, {
+      "name" : "COD_SPECIALITA",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : false
+    }, {
+      "name" : "COD_FP",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "IMPORTO",
+      "dataType" : "DOUBLE",
+      "length" : 0,
+      "nullable" : false
+    } ]
+  }
+}

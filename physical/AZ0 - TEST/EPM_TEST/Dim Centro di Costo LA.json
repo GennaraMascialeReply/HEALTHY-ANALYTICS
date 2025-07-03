@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Centro di Costo LA",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.TAB_CDC_LA",
+    "additionalKeys": [
+      [
+        "CDC"
+      ]
+    ]
+  }
+}

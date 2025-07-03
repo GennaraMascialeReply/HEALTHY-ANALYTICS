@@ -1,0 +1,372 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Gerarchia Centro di Costo",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Codice Centro di Costo - Livello 7" ],
+    "logicalColumns" : [ {
+      "name" : "Codice Centro di Costo - Livello 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.COD_CDC_LIV1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Centro di Costo - Livello 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.COD_CDC_LIV2" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Centro di Costo - Livello 3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.COD_CDC_LIV3" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Centro di Costo - Livello 4",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.COD_CDC_LIV4" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Centro di Costo - Livello 5",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.COD_CDC_LIV5" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Centro di Costo - Livello 6",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.COD_CDC_LIV6" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Centro di Costo - Livello 7",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.COD_CDC_LIV7" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Codice Centro di Costo - Livello 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.DESC_CDC_LIV1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Codice Centro di Costo - Livello 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.DESC_CDC_LIV2" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Codice Centro di Costo - Livello 3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.DESC_CDC_LIV3" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Codice Centro di Costo - Livello 4",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.DESC_CDC_LIV4" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Codice Centro di Costo - Livello 5",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.DESC_CDC_LIV5" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Codice Centro di Costo - Livello 6",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.DESC_CDC_LIV6" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Codice Centro di Costo - Livello 7",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.DESC_CDC_LIV7" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Tipo Centro di Costo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Centro di Costo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.TIPO_CDC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Centro di Costo - Livello 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Codice Centro di Costo - Livello 1", "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Descrizione Codice Centro di Costo - Livello 1" ]
+        }
+      },
+      "logicalLevel" : "Centro di Costo - Livello 1"
+    }, {
+      "name" : "Centro di Costo - Livello 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Codice Centro di Costo - Livello 2", "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Descrizione Codice Centro di Costo - Livello 2" ]
+        }
+      },
+      "logicalLevel" : "Centro di Costo - Livello 2"
+    }, {
+      "name" : "Centro di Costo - Livello 3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Codice Centro di Costo - Livello 3", "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Descrizione Codice Centro di Costo - Livello 3" ]
+        }
+      },
+      "logicalLevel" : "Centro di Costo - Livello 3"
+    }, {
+      "name" : "Centro di Costo - Livello 4",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Codice Centro di Costo - Livello 4", "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Descrizione Codice Centro di Costo - Livello 4" ]
+        }
+      },
+      "logicalLevel" : "Centro di Costo - Livello 4"
+    }, {
+      "name" : "Centro di Costo - Livello 5",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Codice Centro di Costo - Livello 5", "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Descrizione Codice Centro di Costo - Livello 5" ]
+        }
+      },
+      "logicalLevel" : "Centro di Costo - Livello 5"
+    }, {
+      "name" : "Centro di Costo - Livello 6",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Codice Centro di Costo - Livello 6", "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Descrizione Codice Centro di Costo - Livello 6" ]
+        }
+      },
+      "logicalLevel" : "Centro di Costo - Livello 6"
+    }, {
+      "name" : "Centro di Costo - Livello 7",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Codice Centro di Costo - Livello 7", "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Descrizione Codice Centro di Costo - Livello 7" ]
+        }
+      },
+      "logicalLevel" : "Centro di Costo - Livello 7"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Gerarchia Centro di Costo",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Centro di Costo - Livello 1",
+      "ragged" : true,
+      "skipped" : true,
+      "logicalLevels" : [ {
+        "name" : "Centro di Costo - Livello 1",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Centro di Costo - Livello 1" ],
+        "displayKey" : "Centro di Costo - Livello 1"
+      }, {
+        "name" : "Centro di Costo - Livello 2",
+        "numberOfElements" : 9,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Centro di Costo - Livello 2" ],
+        "displayKey" : "Centro di Costo - Livello 2"
+      }, {
+        "name" : "Centro di Costo - Livello 3",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Centro di Costo - Livello 3" ],
+        "displayKey" : "Centro di Costo - Livello 3"
+      }, {
+        "name" : "Centro di Costo - Livello 4",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Centro di Costo - Livello 4" ],
+        "displayKey" : "Centro di Costo - Livello 4"
+      }, {
+        "name" : "Centro di Costo - Livello 5",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Centro di Costo - Livello 5" ],
+        "displayKey" : "Centro di Costo - Livello 5"
+      }, {
+        "name" : "Centro di Costo - Livello 6",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Centro di Costo - Livello 6" ],
+        "displayKey" : "Centro di Costo - Livello 6"
+      }, {
+        "name" : "Centro di Costo - Livello 7",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Centro di Costo - Livello 7" ],
+        "displayKey" : "Centro di Costo - Livello 7"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Gerarchia Centro di Costo",
+        "levels" : [ "Centro di Costo - Livello 1", "Centro di Costo - Livello 2", "Centro di Costo - Livello 3", "Centro di Costo - Livello 4", "Centro di Costo - Livello 5", "Centro di Costo - Livello 6", "Centro di Costo - Livello 7" ]
+      } ]
+    }
+  }
+}

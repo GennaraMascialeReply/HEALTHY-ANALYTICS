@@ -1,0 +1,19 @@
+{
+  "subjectArea" : {
+    "name" : "CoAn Prestazioni",
+    "sourceBusinessModel" : "businessModel:AZ0 - TEST",
+    "tableOrder" : [ {
+      "name" : "presentationTable:CoAn Prestazioni.Data"
+    }, {
+      "name" : "presentationTable:CoAn Prestazioni.Azienda - Struttura"
+    }, {
+      "name" : "presentationTable:CoAn Prestazioni.Misure"
+    }, {
+      "name" : "presentationTable:CoAn Prestazioni.Centro Di Costo"
+    }, {
+      "name" : "presentationTable:CoAn Prestazioni.Specialita"
+    }, {
+      "name" : "presentationTable:CoAn Prestazioni.Prestazioni"
+    } ]
+  }
+}

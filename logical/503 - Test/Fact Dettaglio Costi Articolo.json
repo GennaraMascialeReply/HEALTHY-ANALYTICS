@@ -1,0 +1,207 @@
+{
+  "logicalTable" : {
+    "name" : "Fact Dettaglio Costi Articolo",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Anno",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.ANNO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Articolo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.ARTICOLO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Centro di Costo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.CDC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Classe Merceologica",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.CLASSE_MERCEOLOGICA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Articolo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.DESCRIZIONE_ARTICOLO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fattore Produttivo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.FATTORE_PRODUTTIVO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fonte",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.FONTE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Importo PTD",
+      "dataType" : "FLOAT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.IMPORTO_PTD" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Importo YTD",
+      "dataType" : "FLOAT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.IMPORTO_YTD" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Mese",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.MESE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Quantità",
+      "dataType" : "FLOAT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.QUANTITA" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Sottofonte",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Dettaglio Costi Articolo",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.SOTTOFONTE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact Dettaglio Costi Articolo",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:503 - Test.Dim Fattore Produttivo",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:503 - Test.Dim Gerarchia Centro di Costo",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:503 - Test.Dim Mese",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

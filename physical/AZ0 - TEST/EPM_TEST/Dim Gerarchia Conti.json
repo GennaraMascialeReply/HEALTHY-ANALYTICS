@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Gerarchia Conti",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.TAB_GERARCHIA_CONTI_CEMIN",
+    "additionalKeys": [
+      [
+        "CODICE_CONTO"
+      ]
+    ]
+  }
+}

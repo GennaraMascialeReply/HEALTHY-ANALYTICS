@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Specialita",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.TAB_SPECIALITA_DIM",
+    "additionalKeys": [
+      [
+        "COD_SPECIALITA"
+      ]
+    ]
+  }
+}

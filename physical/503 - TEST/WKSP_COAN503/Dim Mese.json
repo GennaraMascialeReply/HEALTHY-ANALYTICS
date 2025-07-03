@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Mese",
+    "sourceTable": "physicalTable:503 - TEST.WKSP_COAN503.TAB_MESE",
+    "additionalKeys": [
+      [
+        "MESE"
+      ]
+    ]
+  }
+}

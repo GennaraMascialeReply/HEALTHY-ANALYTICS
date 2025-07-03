@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Fattore Produttivo",
+    "sourceTable": "physicalTable:503 - TEST.WKSP_COAN503.TCN_HFP_GERARCHIA_FP",
+    "additionalKeys": [
+      [
+        "FP"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "subjectArea" : {
+    "name" : "LA FP",
+    "sourceBusinessModel" : "businessModel:AZ0 - TEST",
+    "tableOrder" : [ {
+      "name" : "presentationTable:LA FP.Azienda"
+    }, {
+      "name" : "presentationTable:LA FP.Struttura"
+    }, {
+      "name" : "presentationTable:LA FP.Centro di Costo"
+    }, {
+      "name" : "presentationTable:LA FP.Misure"
+    }, {
+      "name" : "presentationTable:LA FP.Fattore Produttivo"
+    }, {
+      "name" : "presentationTable:LA FP.Data"
+    } ]
+  }
+}

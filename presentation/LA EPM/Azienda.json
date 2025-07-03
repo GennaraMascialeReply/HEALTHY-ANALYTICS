@@ -1,0 +1,15 @@
+{
+  "presentationTable" : {
+    "name" : "Azienda",
+    "presentationColumns" : [ {
+      "name" : "Codice Azienda",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Aziende.Codice Azienda"
+    }, {
+      "name" : "Descrizione Azienda",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Aziende.Descrizione Azienda"
+    }, {
+      "name" : "Azienda",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Aziende.Azienda"
+    } ]
+  }
+}

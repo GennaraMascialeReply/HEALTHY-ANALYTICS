@@ -1,0 +1,88 @@
+{
+  "physicalTable" : {
+    "name" : "TAB_GERARCHIA_CONTI_CEMIN",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CODICE_CONTO",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "SEGNO",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "CONTO_LIVELLO_6",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "CONTO_LIVELLO_5",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "CONTO_LIVELLO_4",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "CONTO_LIVELLO_3",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "CONTO_LIVELLO_2",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "CONTO_LIVELLO_1",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "CONTO_LIVELLO_0",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE_CONTO",
+      "dataType" : "VARCHAR",
+      "length" : 1250,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE_LIVELLO_6",
+      "dataType" : "VARCHAR",
+      "length" : 1250,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE_LIVELLO_5",
+      "dataType" : "VARCHAR",
+      "length" : 1250,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE_LIVELLO_4",
+      "dataType" : "VARCHAR",
+      "length" : 1250,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE_LIVELLO_3",
+      "dataType" : "VARCHAR",
+      "length" : 1250,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE_LIVELLO_2",
+      "dataType" : "VARCHAR",
+      "length" : 1250,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE_LIVELLO_1",
+      "dataType" : "VARCHAR",
+      "length" : 1250,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "CODICE_CONTO" ] ]
+  }
+}

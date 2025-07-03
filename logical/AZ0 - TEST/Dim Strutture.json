@@ -1,0 +1,114 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Strutture",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Codice Azienda", "Codice Struttura" ],
+    "logicalColumns" : [ {
+      "name" : "Codice Azienda",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Strutture",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Strutture.COD_AZIENDA" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Azienda"
+    }, {
+      "name" : "Codice Struttura",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Strutture",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Strutture.COD_STRUTTURA" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Struttura"
+    }, {
+      "name" : "Descrizione Struttura",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Strutture",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Strutture.DESCRIZIONE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Struttura"
+    }, {
+      "name" : "Macro Classificazione PSSR",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Strutture",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Strutture.MACRO_CLASSIFICAZIONE_PSSR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Struttura",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Strutture.Codice Struttura", "logicalColumn:AZ0 - TEST.Dim Strutture.Descrizione Struttura" ]
+        }
+      },
+      "logicalLevel" : "Struttura"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Strutture",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:AZ0 - TEST.EPM_TEST.Dim Strutture" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Azienda",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Azienda",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Codice Azienda" ],
+        "displayKey" : "Codice Azienda"
+      }, {
+        "name" : "Struttura",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Struttura" ],
+        "displayKey" : "Struttura"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Azienda - Struttura",
+        "levels" : [ "Azienda", "Struttura" ]
+      } ]
+    }
+  }
+}

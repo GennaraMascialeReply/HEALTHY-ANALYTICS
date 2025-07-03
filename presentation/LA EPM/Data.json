@@ -1,0 +1,9 @@
+{
+  "presentationTable" : {
+    "name" : "Data",
+    "presentationColumns" : [ {
+      "name" : "Anno",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Anno.Anno"
+    } ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "subjectArea" : {
+    "name" : "CET",
+    "sourceBusinessModel" : "businessModel:AZ0 - TEST",
+    "tableOrder" : [ {
+      "name" : "presentationTable:CET.Gerarchia Conti"
+    }, {
+      "name" : "presentationTable:CET.Misure"
+    }, {
+      "name" : "presentationTable:CET.Attributi"
+    }, {
+      "name" : "presentationTable:CET.Azienda"
+    }, {
+      "name" : "presentationTable:CET.Dettaglio Inclusione"
+    } ]
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Gerarchia Conti",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Codice Conto" ],
+    "logicalColumns" : [ {
+      "name" : "Codice Conto",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.CODICE_CONTO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Conto - Livello 0",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.CONTO_LIVELLO_0" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Conto - Livello 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.CONTO_LIVELLO_1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Conto - Livello 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.CONTO_LIVELLO_2" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Conto - Livello 3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.CONTO_LIVELLO_3" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Conto - Livello 4",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.CONTO_LIVELLO_4" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Conto - Livello 5",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.CONTO_LIVELLO_5" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Conto - Livello 6",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.CONTO_LIVELLO_6" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Conto",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.DESCRIZIONE_CONTO" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Codice Conto - Livello 0"
+    }, {
+      "name" : "Descrizione Conto - Livello 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.DESCRIZIONE_LIVELLO_1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Codice Conto - Livello 1"
+    }, {
+      "name" : "Descrizione Conto - Livello 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.DESCRIZIONE_LIVELLO_2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Codice Conto - Livello 2"
+    }, {
+      "name" : "Descrizione Conto - Livello 3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.DESCRIZIONE_LIVELLO_3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Codice Conto - Livello 3"
+    }, {
+      "name" : "Descrizione Conto - Livello 4",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.DESCRIZIONE_LIVELLO_4" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Codice Conto - Livello 4"
+    }, {
+      "name" : "Descrizione Conto - Livello 5",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.DESCRIZIONE_LIVELLO_5" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Codice Conto - Livello 5"
+    }, {
+      "name" : "Descrizione Conto - Livello 6",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.DESCRIZIONE_LIVELLO_6" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Codice Conto - Livello 6"
+    }, {
+      "name" : "Segno",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Gerarchia Conti",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.SEGNO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Conto - Livello 6",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 6", "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 6" ]
+        }
+      }
+    }, {
+      "name" : "Conto - Livello 5",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 5", "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 5" ]
+        }
+      }
+    }, {
+      "name" : "Conto - Livello 4",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 4", "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 4" ]
+        }
+      }
+    }, {
+      "name" : "Conto - Livello 3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 3", "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 3" ]
+        }
+      }
+    }, {
+      "name" : "Conto - Livello 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 2", "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 2" ]
+        }
+      }
+    }, {
+      "name" : "Conto - Livello 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 1", "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 1" ]
+        }
+      }
+    }, {
+      "name" : "Conto",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 0", "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Gerarchia Conti",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Codice Conto - Livello 6",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Codice Conto - Livello 6",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Descrizione Conto - Livello 6" ],
+        "displayKey" : "Descrizione Conto - Livello 6"
+      }, {
+        "name" : "Codice Conto - Livello 5",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Descrizione Conto - Livello 5" ],
+        "displayKey" : "Descrizione Conto - Livello 5"
+      }, {
+        "name" : "Codice Conto - Livello 4",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Descrizione Conto - Livello 4" ],
+        "displayKey" : "Descrizione Conto - Livello 4"
+      }, {
+        "name" : "Codice Conto - Livello 3",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Descrizione Conto - Livello 3" ],
+        "displayKey" : "Descrizione Conto - Livello 3"
+      }, {
+        "name" : "Codice Conto - Livello 2",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Descrizione Conto - Livello 2" ],
+        "displayKey" : "Descrizione Conto - Livello 2"
+      }, {
+        "name" : "Codice Conto - Livello 1",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Descrizione Conto - Livello 1" ],
+        "displayKey" : "Descrizione Conto - Livello 1"
+      }, {
+        "name" : "Codice Conto - Livello 0",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Descrizione Conto" ],
+        "displayKey" : "Descrizione Conto"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim Gerarchia Conti",
+        "levels" : [ "Codice Conto - Livello 6", "Codice Conto - Livello 5", "Codice Conto - Livello 4", "Codice Conto - Livello 3", "Codice Conto - Livello 2", "Codice Conto - Livello 1", "Codice Conto - Livello 0" ]
+      } ]
+    }
+  }
+}

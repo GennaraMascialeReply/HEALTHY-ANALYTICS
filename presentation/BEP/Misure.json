@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Misure",
+    "presentationColumns" : [ {
+      "name" : "Valore BEP PTD",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact BEP.Valore BEP PTD"
+    }, {
+      "name" : "Valore BEP YTD",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact BEP.Valore BEP YTD"
+    }, {
+      "name" : "Valore MEV PTD",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact BEP.Valore MEV PTD"
+    }, {
+      "name" : "Valore MEV YTD",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact BEP.Valore MEV YTD"
+    } ]
+  }
+}

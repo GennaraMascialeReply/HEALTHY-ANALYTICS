@@ -1,0 +1,33 @@
+{
+  "physicalTable" : {
+    "name" : "TAB_PERC_CONTI",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "AZIENDA",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "CODICE_CONTO",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE_CONTO",
+      "dataType" : "VARCHAR",
+      "length" : 1250,
+      "nullable" : false
+    }, {
+      "name" : "FLG_INCLUSIONE",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : false
+    }, {
+      "name" : "PERC_INCLUSIONE",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "AZIENDA", "CODICE_CONTO" ] ]
+  }
+}

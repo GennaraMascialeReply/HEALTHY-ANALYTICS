@@ -1,0 +1,85 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Centro di Costo",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Codice Centro diCosto",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Codice CDC",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Codice CDC.COD_CDC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Centro di Costo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Codice CDC",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Codice CDC.DESCRIZIONE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Macro Tipo Centro di Costo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Codice CDC",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Codice CDC.MACRO_TIPO_CDC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Tipo Centro di Costo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Codice CDC",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Codice CDC.TIPO_CDC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Centro di Costo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Centro di Costo.Codice Centro diCosto", "logicalColumn:AZ0 - TEST.Dim Centro di Costo.Descrizione Centro di Costo" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Codice CDC",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:AZ0 - TEST.EPM_TEST.Dim Codice CDC" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "Codice Centro diCosto" ]
+  }
+}

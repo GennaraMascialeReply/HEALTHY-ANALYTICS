@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "Dim Fattore Produttivo - Anagrafica",
+    "sourceTable" : "physicalTable:503 - TEST.WKSP_COAN503.TCN_FP_ANAGRAFICA",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:503 - TEST.WKSP_COAN503.Dim Fattore Produttivo",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:503 - TEST.WKSP_COAN503.Dim Fattore Produttivo - Anagrafica.COD_FP",
+        "rightColumn" : "physicalColumn:503 - TEST.WKSP_COAN503.Dim Fattore Produttivo - Anagrafica.COD_FP"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

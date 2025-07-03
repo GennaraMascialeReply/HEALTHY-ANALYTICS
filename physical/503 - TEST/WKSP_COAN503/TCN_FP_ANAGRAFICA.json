@@ -1,0 +1,33 @@
+{
+  "physicalTable" : {
+    "name" : "TCN_FP_ANAGRAFICA",
+    "description" : "Anagrafica dei fattori produttivi",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COD_FP",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : true
+    }, {
+      "name" : "DESC_FP",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : true
+    }, {
+      "name" : "FAT_ATT3_CODI",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : true
+    }, {
+      "name" : "DATA_INI",
+      "dataType" : "DATE",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "DATA_FINE",
+      "dataType" : "DATE",
+      "length" : 0,
+      "nullable" : true
+    } ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Anno",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.TAB_ANNO_DIM",
+    "additionalKeys": [
+      [
+        "ANNO"
+      ]
+    ]
+  }
+}

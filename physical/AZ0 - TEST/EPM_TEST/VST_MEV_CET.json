@@ -1,0 +1,83 @@
+{
+  "physicalTable" : {
+    "name" : "VST_MEV_CET",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ANNO",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : false
+    }, {
+      "name" : "PERIOD",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : false
+    }, {
+      "name" : "AZIENDA",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : false
+    }, {
+      "name" : "COD_CONTO",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : false
+    }, {
+      "name" : "VALORE_CET_PTD",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BILANCIO",
+      "dataType" : "VARCHAR",
+      "length" : 80,
+      "nullable" : false
+    }, {
+      "name" : "PERIODO_ACQUISIZIONE",
+      "dataType" : "VARCHAR",
+      "length" : 9,
+      "nullable" : false
+    }, {
+      "name" : "VALORE_CET_YTD",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "VALORE_MEV_PTD",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "VALORE_MEV_YTD",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "FLG_INCLUSIONE",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : false
+    }, {
+      "name" : "PERC_INCLUSIONE",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "SEGNO",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "PF",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "FLUSSO",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "ANNO", "AZIENDA", "COD_CONTO", "PERIOD", "PERIODO_ACQUISIZIONE" ] ]
+  }
+}

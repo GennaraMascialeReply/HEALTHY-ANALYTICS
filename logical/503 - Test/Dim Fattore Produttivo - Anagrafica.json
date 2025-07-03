@@ -1,0 +1,93 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Fattore Produttivo - Anagrafica",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Codice Fattore Produttivo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "TCN_FP_ANAGRAFICA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.TCN_FP_ANAGRAFICA.COD_FP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Fattore Produttivo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "TCN_FP_ANAGRAFICA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.TCN_FP_ANAGRAFICA.DESC_FP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FAT_ATT3_CODI",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "TCN_FP_ANAGRAFICA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.TCN_FP_ANAGRAFICA.FAT_ATT3_CODI" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Data inizio Validità",
+      "dataType" : "DATE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "TCN_FP_ANAGRAFICA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.TCN_FP_ANAGRAFICA.DATA_INI" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Data fine validità",
+      "dataType" : "DATE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "TCN_FP_ANAGRAFICA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.TCN_FP_ANAGRAFICA.DATA_FINE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "TCN_FP_ANAGRAFICA",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:503 - TEST.WKSP_COAN503.TCN_FP_ANAGRAFICA" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:503 - Test.Dim Fattore Produttivo",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}

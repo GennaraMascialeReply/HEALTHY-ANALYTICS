@@ -1,0 +1,28 @@
+{
+  "physicalTable" : {
+    "name" : "TAB_CDC_REG_DIM",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COD_CDC",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : false
+    }, {
+      "name" : "TIPO_CDC",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "MACRO_TIPO_CDC",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "COD_CDC" ] ]
+  }
+}

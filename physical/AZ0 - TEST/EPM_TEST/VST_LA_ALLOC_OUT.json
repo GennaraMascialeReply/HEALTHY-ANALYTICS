@@ -1,0 +1,48 @@
+{
+  "physicalTable" : {
+    "name" : "VST_LA_ALLOC_OUT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACCOUNT",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : false
+    }, {
+      "name" : "ALLOCAZIONE",
+      "dataType" : "VARCHAR",
+      "length" : 2000,
+      "nullable" : false
+    }, {
+      "name" : "CDC",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : false
+    }, {
+      "name" : "ENTITY",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : false
+    }, {
+      "name" : "PCM_BALANCE",
+      "dataType" : "VARCHAR",
+      "length" : 2000,
+      "nullable" : false
+    }, {
+      "name" : "PCM_RULE",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : false
+    }, {
+      "name" : "YEARS",
+      "dataType" : "VARCHAR",
+      "length" : 500,
+      "nullable" : false
+    }, {
+      "name" : "IMPORTO",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "CDC", "YEARS" ] ]
+  }
+}

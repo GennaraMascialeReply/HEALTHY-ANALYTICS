@@ -1,0 +1,61 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Mese",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Descrizione Mese",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Mese",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Mese",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Mese.DESCRIZIONE_MESE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Mese",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Mese",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Mese.MESE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Trimestre",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Mese",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:503 - TEST.WKSP_COAN503.Dim Mese.TRIMESTRE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Mese",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:503 - TEST.WKSP_COAN503.Dim Mese" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "Mese" ]
+  }
+}

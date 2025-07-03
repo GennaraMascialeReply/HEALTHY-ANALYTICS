@@ -1,0 +1,59 @@
+{
+  "physicalTable": {
+    "name": "Fact Costi CoAn",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.VST_COSTI_COAN",
+    "joins": [      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Anno",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Costi CoAn.ANNO",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Anno.ANNO"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Aziende",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Costi CoAn.COD_AZIENDA",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Aziende.COD_AZIENDA"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Codice CDC",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Costi CoAn.COD_CDC",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Codice CDC.COD_CDC"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Costi CoAn.COD_FP",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo.COD_FP_COAN"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Specialita",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Costi CoAn.COD_SPECIALITA",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Specialita.COD_SPECIALITA"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Strutture",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Costi CoAn.COD_AZIENDA",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Strutture.COD_AZIENDA"
+          },
+          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Costi CoAn.COD_STRUTTURA",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Strutture.COD_STRUTTURA"
+          }
+        ]
+      }
+    ]
+  }
+}

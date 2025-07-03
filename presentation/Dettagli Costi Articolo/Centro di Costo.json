@@ -1,0 +1,66 @@
+{
+  "presentationTable" : {
+    "name" : "Centro di Costo",
+    "presentationColumns" : [ {
+      "name" : "Centro di Costo",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Dettaglio Costi Articolo.Centro di Costo"
+    }, {
+      "name" : "Centro di Costo - Livello 1",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 1"
+    }, {
+      "name" : "Centro di Costo - Livello 2",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 2"
+    }, {
+      "name" : "Centro di Costo - Livello 3",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 3"
+    }, {
+      "name" : "Centro di Costo - Livello 4",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 4"
+    }, {
+      "name" : "Centro di Costo - Livello 5",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 5"
+    }, {
+      "name" : "Centro di Costo - Livello 6",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 6"
+    }, {
+      "name" : "Centro di Costo - Livello 7",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 7"
+    }, {
+      "name" : "Tipo Centro di Costo",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Gerarchia Centro di Costo.Tipo Centro di Costo"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Gerarchia Centro di Costo",
+      "sourceLogicalTable" : "logicalTable:503 - Test.Dim Gerarchia Centro di Costo",
+      "levels" : [ {
+        "name" : "Centro di Costo - Livello 1",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 1",
+        "displayColumn" : "presentationColumn:Dettagli Costi Articolo.Centro di Costo.Centro di Costo - Livello 1"
+      }, {
+        "name" : "Centro di Costo - Livello 2",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 2",
+        "displayColumn" : "presentationColumn:Dettagli Costi Articolo.Centro di Costo.Centro di Costo - Livello 2"
+      }, {
+        "name" : "Centro di Costo - Livello 3",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 3",
+        "displayColumn" : "presentationColumn:Dettagli Costi Articolo.Centro di Costo.Centro di Costo - Livello 3"
+      }, {
+        "name" : "Centro di Costo - Livello 4",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 4",
+        "displayColumn" : "presentationColumn:Dettagli Costi Articolo.Centro di Costo.Centro di Costo - Livello 4"
+      }, {
+        "name" : "Centro di Costo - Livello 5",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 5",
+        "displayColumn" : "presentationColumn:Dettagli Costi Articolo.Centro di Costo.Centro di Costo - Livello 5"
+      }, {
+        "name" : "Centro di Costo - Livello 6",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 6",
+        "displayColumn" : "presentationColumn:Dettagli Costi Articolo.Centro di Costo.Centro di Costo - Livello 6"
+      }, {
+        "name" : "Centro di Costo - Livello 7",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Gerarchia Centro di Costo.Centro di Costo - Livello 7",
+        "displayColumn" : "presentationColumn:Dettagli Costi Articolo.Centro di Costo.Centro di Costo - Livello 7"
+      } ]
+    } ]
+  }
+}

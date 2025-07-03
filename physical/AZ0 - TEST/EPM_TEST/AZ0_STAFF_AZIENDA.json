@@ -1,0 +1,18 @@
+{
+  "physicalTable" : {
+    "name" : "AZ0_STAFF_AZIENDA",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "LOGIN_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : false
+    }, {
+      "name" : "COD_AZIENDA_VISIBILE",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "LOGIN_NAME" ] ]
+  }
+}

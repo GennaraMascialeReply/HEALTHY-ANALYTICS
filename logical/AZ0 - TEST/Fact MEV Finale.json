@@ -1,0 +1,200 @@
+{
+  "logicalTable" : {
+    "name" : "Fact MEV Finale",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Anno",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact MEV Finale",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.ANNO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Area",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact MEV Finale",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.AREA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Azienda",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact MEV Finale",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.AZIENDA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Percentuale Obiettivo",
+      "dataType" : "FLOAT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact MEV Finale",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.PERC_OBT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Periodo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact MEV Finale",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.PERIODO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Somma Valore BEP",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact MEV Finale",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.SOMMA_MEV_BEP" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Somma Valore CET",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact MEV Finale",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.SOMMA_MEV_CET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Valore BEP Anno",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact MEV Finale",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.VALORE_BEP_ANNO" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Valore per Area BEP",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact MEV Finale",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.VALORE_PER_AREA_BEP" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Valore per Area CET",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact MEV Finale",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.VALORE_PER_AREA_CET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Percentuale Completamento",
+      "dataType" : "FLOAT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact MEV Finale",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.PERC_COMP" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG"
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact MEV Finale",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:AZ0 - TEST.EPM_TEST.Dim Aziende", "physicalTable:AZ0 - TEST.EPM_TEST.Fact MEV Finale" ],
+        "logicalTableSourceJoins" : [ {
+          "leftTable" : "physicalTable:AZ0 - TEST.EPM_TEST.Fact MEV Finale",
+          "rightTable" : "physicalTable:AZ0 - TEST.EPM_TEST.Dim Aziende",
+          "joinType" : "INNER",
+          "disable" : false
+        } ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:AZ0 - TEST.Dim Aziende",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Gerarchia Centro di Costo",
+    "sourceTable": "physicalTable:503 - TEST.WKSP_COAN503.TCN_HCDC_GERARCHIA_CDC",
+    "additionalKeys": [
+      [
+        "COD_CDC_LIV7"
+      ]
+    ]
+  }
+}

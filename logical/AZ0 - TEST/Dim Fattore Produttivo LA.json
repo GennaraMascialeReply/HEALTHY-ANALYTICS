@@ -1,0 +1,170 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Fattore Produttivo LA",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Fattore Produttivo - Livello 1" ],
+    "logicalColumns" : [ {
+      "name" : "Descrizione Fattore Produttivo - Livello 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Fattore Produttivo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA.DESC_FP_LIV1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Fattore Produttivo - Livello 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Fattore Produttivo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA.DESC_FP_LIV2" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Fattore Produttivo - Livello 3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Fattore Produttivo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA.DESC_FP_LIV3" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fattore Produttivo - Livello 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Fattore Produttivo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA.FP_LIV1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fattore Produttivo - Livello 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Fattore Produttivo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA.FP_LIV2" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fattore Produttivo - Livello 3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Fattore Produttivo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA.FP_LIV3" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Livello 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA.Fattore Produttivo - Livello 1", "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA.Descrizione Fattore Produttivo - Livello 1" ]
+        }
+      },
+      "logicalLevel" : "Livello 1"
+    }, {
+      "name" : "Livello 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA.Fattore Produttivo - Livello 2", "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA.Descrizione Fattore Produttivo - Livello 2" ]
+        }
+      },
+      "logicalLevel" : "Livello 2"
+    }, {
+      "name" : "Livello 3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA.Fattore Produttivo - Livello 3", "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA.Descrizione Fattore Produttivo - Livello 3" ]
+        }
+      },
+      "logicalLevel" : "Livello 3"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Fattore Produttivo LA",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Livello 3",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Livello 3",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Livello 3" ],
+        "displayKey" : "Livello 3"
+      }, {
+        "name" : "Livello 2",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Livello 2" ],
+        "displayKey" : "Livello 2"
+      }, {
+        "name" : "Livello 1",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Livello 1" ],
+        "displayKey" : "Livello 1"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim Fattore Produttivo LA",
+        "levels" : [ "Livello 3", "Livello 2", "Livello 1" ]
+      } ]
+    }
+  }
+}

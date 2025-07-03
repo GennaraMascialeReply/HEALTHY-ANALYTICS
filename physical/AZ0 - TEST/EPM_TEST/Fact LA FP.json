@@ -1,0 +1,49 @@
+{
+  "physicalTable": {
+    "name": "Fact LA FP",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.VST_LA_DETT_FP_STR",
+    "joins": [      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Aziende",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact LA FP.ENTITY",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Aziende.COD_AZIENDA"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact LA FP.CDC",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.CDC"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact LA FP.ACCOUNT",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA.FP_LIV1"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Strutture",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact LA FP.ENTITY",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Strutture.COD_AZIENDA"
+          },
+          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact LA FP.STRUTTURA",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Strutture.COD_STRUTTURA"
+          }
+        ]
+      }
+    ],
+    "additionalKeys": [
+      [
+        "ACCOUNT",
+        "CDC"
+      ]
+    ]
+  }
+}

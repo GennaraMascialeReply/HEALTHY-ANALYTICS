@@ -1,0 +1,12 @@
+{
+  "presentationTable" : {
+    "name" : "Specialita",
+    "presentationColumns" : [ {
+      "name" : "Codice Specialità",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Specialita.Codice Specialità"
+    }, {
+      "name" : "Descrizione Specialita",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Specialita.Descrizione Specialita"
+    } ]
+  }
+}

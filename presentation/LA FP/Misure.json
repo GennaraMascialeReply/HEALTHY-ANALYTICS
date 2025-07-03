@@ -1,0 +1,9 @@
+{
+  "presentationTable" : {
+    "name" : "Misure",
+    "presentationColumns" : [ {
+      "name" : "Importo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact LA FP.Importo"
+    } ]
+  }
+}

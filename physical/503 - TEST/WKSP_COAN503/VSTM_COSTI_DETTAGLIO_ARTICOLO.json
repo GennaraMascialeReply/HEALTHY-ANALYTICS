@@ -1,0 +1,67 @@
+{
+  "physicalTable" : {
+    "name" : "VSTM_COSTI_DETTAGLIO_ARTICOLO",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ANNO",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : false
+    }, {
+      "name" : "MESE",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "FONTE",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "SOTTOFONTE",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "CDC",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "FATTORE_PRODUTTIVO",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : false
+    }, {
+      "name" : "ARTICOLO",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE_ARTICOLO",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : false
+    }, {
+      "name" : "CLASSE_MERCEOLOGICA",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "QUANTITA",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "IMPORTO_PTD",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "IMPORTO_YTD",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    } ]
+  }
+}

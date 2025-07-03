@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Prestazioni",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.TAB_SPS_TAB_PRESTAZIONI",
+    "additionalKeys": [
+      [
+        "COD_PRESTAZIONE"
+      ]
+    ]
+  }
+}

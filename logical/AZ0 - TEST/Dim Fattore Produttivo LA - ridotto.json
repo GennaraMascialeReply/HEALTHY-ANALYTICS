@@ -1,0 +1,71 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Fattore Produttivo LA - ridotto",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Descrizione Fattore Produttivo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Fattore Produttivo LA - ridotto",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA - ridotto.DESC_FP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Codice Fattore Produttivo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Fattore Produttivo LA - ridotto",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA - ridotto.FP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Ordinamento",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Fattore Produttivo LA - ridotto",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA - ridotto.ORDINE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fattore Produttivo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA - ridotto.Codice Fattore Produttivo", "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA - ridotto.Descrizione Fattore Produttivo" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Fattore Produttivo LA - ridotto",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA - ridotto" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "Codice Fattore Produttivo" ]
+  }
+}

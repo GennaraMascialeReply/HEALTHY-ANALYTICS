@@ -1,0 +1,112 @@
+{
+  "physicalTable" : {
+    "name" : "TCN_HFP_GERARCHIA_FP",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "FP",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "FP_LIV1",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV1",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "FP_LIV2",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV2",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "FP_LIV3",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV3",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "FP_LIV4",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV4",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "FP_LIV5",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV5",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "FP_LIV6",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV6",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "FP_LIV7",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV7",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "FP_LIV8",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV8",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "FP_LIV9",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV9",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "TIPO_FP",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    } ]
+  }
+}

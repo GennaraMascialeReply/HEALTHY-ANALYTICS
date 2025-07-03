@@ -1,0 +1,58 @@
+{
+  "physicalTable" : {
+    "name" : "TAB_FP_COAN_REG_DIM",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COD_FP_COAN",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : false
+    }, {
+      "name" : "COD_FP_LIV1",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "DESC_L1",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : false
+    }, {
+      "name" : "COD_FP_LIV2",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "DESC_L2",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : false
+    }, {
+      "name" : "COD_FP_LIV3",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "DESC_L3",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : false
+    }, {
+      "name" : "COD_FP_LIV4",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "DESC_L4",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "COD_FP_COAN" ] ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "presentationTable" : {
+    "name" : "Misure",
+    "presentationColumns" : [ {
+      "name" : "Costo Erogato",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact Costi CoAn.Costo Erogato"
+    } ]
+  }
+}

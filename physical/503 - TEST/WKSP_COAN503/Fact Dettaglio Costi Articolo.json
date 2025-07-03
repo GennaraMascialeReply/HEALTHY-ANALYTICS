@@ -1,0 +1,31 @@
+{
+  "physicalTable": {
+    "name": "Fact Dettaglio Costi Articolo",
+    "sourceTable": "physicalTable:503 - TEST.WKSP_COAN503.VSTM_COSTI_DETTAGLIO_ARTICOLO",
+    "joins": [      {
+        "rightTable": "physicalTable:503 - TEST.WKSP_COAN503.Dim Fattore Produttivo",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.FATTORE_PRODUTTIVO",
+            "rightColumn": "physicalColumn:503 - TEST.WKSP_COAN503.Dim Fattore Produttivo.FP"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.CDC",
+            "rightColumn": "physicalColumn:503 - TEST.WKSP_COAN503.Dim Gerarchia Centro di Costo.COD_CDC_LIV7"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:503 - TEST.WKSP_COAN503.Dim Mese",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:503 - TEST.WKSP_COAN503.Fact Dettaglio Costi Articolo.MESE",
+            "rightColumn": "physicalColumn:503 - TEST.WKSP_COAN503.Dim Mese.MESE"
+          }
+        ]
+      }
+    ]
+  }
+}

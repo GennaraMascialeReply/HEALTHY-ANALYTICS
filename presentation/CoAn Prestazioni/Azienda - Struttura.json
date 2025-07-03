@@ -1,0 +1,34 @@
+{
+  "presentationTable" : {
+    "name" : "Azienda - Struttura",
+    "presentationColumns" : [ {
+      "name" : "Codice Azienda",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Strutture.Codice Azienda"
+    }, {
+      "name" : "Codice Struttura",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Strutture.Codice Struttura"
+    }, {
+      "name" : "Descrizione Struttura",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Strutture.Descrizione Struttura"
+    }, {
+      "name" : "Macro Classificazione PSSR",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Strutture.Macro Classificazione PSSR"
+    }, {
+      "name" : "Struttura",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Strutture.Struttura"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Azienda - Struttura",
+      "sourceLogicalTable" : "logicalTable:AZ0 - TEST.Dim Strutture",
+      "levels" : [ {
+        "name" : "Azienda",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Strutture.Azienda",
+        "displayColumn" : "presentationColumn:CoAn Prestazioni.Azienda - Struttura.Codice Azienda"
+      }, {
+        "name" : "Struttura",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Strutture.Struttura",
+        "displayColumn" : "presentationColumn:CoAn Prestazioni.Azienda - Struttura.Struttura"
+      } ]
+    } ]
+  }
+}

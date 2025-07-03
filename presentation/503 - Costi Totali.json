@@ -1,0 +1,17 @@
+{
+  "subjectArea" : {
+    "name" : "503 - Costi Totali",
+    "sourceBusinessModel" : "businessModel:503 - Test",
+    "tableOrder" : [ {
+      "name" : "presentationTable:503 - Costi Totali.Fattore Produttivo"
+    }, {
+      "name" : "presentationTable:503 - Costi Totali.Centro di Costo"
+    }, {
+      "name" : "presentationTable:503 - Costi Totali.Anno"
+    }, {
+      "name" : "presentationTable:503 - Costi Totali.Misure"
+    }, {
+      "name" : "presentationTable:503 - Costi Totali.Fonte"
+    } ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "physicalTable": {
+    "name": "Fact Prestazioni",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.VST_SPS_APS_INT",
+    "joins": [      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Anno",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Prestazioni.ANNO",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Anno.ANNO"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Aziende",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Prestazioni.COD_AZIENDA",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Aziende.COD_AZIENDA"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Codice CDC",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Prestazioni.COD_CDC_EROG",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Codice CDC.COD_CDC"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Prestazioni.COD_FP_COAN",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo.COD_FP_COAN"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Prestazioni",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Prestazioni.COD_PREST",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Prestazioni.COD_PRESTAZIONE"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Specialita",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Prestazioni.COD_SPECIALITA_EROG",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Specialita.COD_SPECIALITA"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Strutture",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Prestazioni.COD_AZIENDA",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Strutture.COD_AZIENDA"
+          },
+          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact Prestazioni.COD_STRUTTURA_EROG",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Strutture.COD_STRUTTURA"
+          }
+        ]
+      }
+    ]
+  }
+}

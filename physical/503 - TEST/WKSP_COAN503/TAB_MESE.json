@@ -1,0 +1,23 @@
+{
+  "physicalTable" : {
+    "name" : "TAB_MESE",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "MESE",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE_MESE",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "TRIMESTRE",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "MESE" ] ]
+  }
+}

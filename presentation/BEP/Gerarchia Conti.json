@@ -1,0 +1,62 @@
+{
+  "presentationTable" : {
+    "name" : "Gerarchia Conti",
+    "presentationColumns" : [ {
+      "name" : "Descrizione Conto",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto"
+    }, {
+      "name" : "Descrizione Conto - Livello 1",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 1"
+    }, {
+      "name" : "Descrizione Conto - Livello 2",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 2"
+    }, {
+      "name" : "Descrizione Conto - Livello 3",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 3"
+    }, {
+      "name" : "Descrizione Conto - Livello 4",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 4"
+    }, {
+      "name" : "Descrizione Conto - Livello 5",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 5"
+    }, {
+      "name" : "Descrizione Conto - Livello 6",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Descrizione Conto - Livello 6"
+    }, {
+      "name" : "Segno",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Gerarchia Conti.Segno"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Dim Gerarchia Conti",
+      "sourceLogicalTable" : "logicalTable:AZ0 - TEST.Dim Gerarchia Conti",
+      "levels" : [ {
+        "name" : "Codice Conto - Livello 6",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 6"
+      }, {
+        "name" : "Codice Conto - Livello 5",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 5",
+        "displayColumn" : "presentationColumn:BEP.Gerarchia Conti.Descrizione Conto - Livello 5"
+      }, {
+        "name" : "Codice Conto - Livello 4",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 4",
+        "displayColumn" : "presentationColumn:BEP.Gerarchia Conti.Descrizione Conto - Livello 4"
+      }, {
+        "name" : "Codice Conto - Livello 3",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 3",
+        "displayColumn" : "presentationColumn:BEP.Gerarchia Conti.Descrizione Conto - Livello 3"
+      }, {
+        "name" : "Codice Conto - Livello 2",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 2",
+        "displayColumn" : "presentationColumn:BEP.Gerarchia Conti.Descrizione Conto - Livello 2"
+      }, {
+        "name" : "Codice Conto - Livello 1",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 1",
+        "displayColumn" : "presentationColumn:BEP.Gerarchia Conti.Descrizione Conto - Livello 1"
+      }, {
+        "name" : "Codice Conto - Livello 0",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Gerarchia Conti.Codice Conto - Livello 0",
+        "displayColumn" : "presentationColumn:BEP.Gerarchia Conti.Descrizione Conto"
+      } ]
+    } ]
+  }
+}

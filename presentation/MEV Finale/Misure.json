@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Misure",
+    "presentationColumns" : [ {
+      "name" : "Somma Valore BEP",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact MEV Finale.Somma Valore BEP"
+    }, {
+      "name" : "Somma Valore CET",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact MEV Finale.Somma Valore CET"
+    }, {
+      "name" : "Valore BEP Anno",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact MEV Finale.Valore BEP Anno"
+    }, {
+      "name" : "Valore per Area BEP",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact MEV Finale.Valore per Area BEP"
+    }, {
+      "name" : "Valore per Area CET",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact MEV Finale.Valore per Area CET"
+    } ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "physicalTable" : {
+    "name" : "TAB_CDC_LA",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CDC",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE_LIVELLO",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : false
+    }, {
+      "name" : "LIV1_LA",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "LIV1_LA_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : false
+    }, {
+      "name" : "LIV2_LA",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "LIV2_LA_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : false
+    }, {
+      "name" : "LIV3_LA",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "LIV3_LA_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : false
+    }, {
+      "name" : "LIV4_LA",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "LIV4_LA_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "CDC" ] ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Aziende",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Codice Azienda",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Aziende",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Aziende.COD_AZIENDA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Azienda",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Aziende",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Aziende.DESCRIZIONE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Azienda",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Aziende.Codice Azienda", "logicalColumn:AZ0 - TEST.Dim Aziende.Descrizione Azienda" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Aziende",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:AZ0 - TEST.EPM_TEST.Dim Aziende" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "Codice Azienda" ]
+  }
+}

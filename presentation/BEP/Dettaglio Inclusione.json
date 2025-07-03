@@ -1,0 +1,12 @@
+{
+  "presentationTable" : {
+    "name" : "Dettaglio Inclusione",
+    "presentationColumns" : [ {
+      "name" : "Flag Inclusione",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Percentuali Inclusione.Flag Inclusione"
+    }, {
+      "name" : "Percentuale Inclusione",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Percentuali Inclusione.Percentuale Inclusione"
+    } ]
+  }
+}

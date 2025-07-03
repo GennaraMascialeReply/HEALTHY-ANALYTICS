@@ -1,0 +1,13 @@
+{
+  "subjectArea" : {
+    "name" : "MEV Finale",
+    "sourceBusinessModel" : "businessModel:AZ0 - TEST",
+    "tableOrder" : [ {
+      "name" : "presentationTable:MEV Finale.Azienda"
+    }, {
+      "name" : "presentationTable:MEV Finale.Attributi"
+    }, {
+      "name" : "presentationTable:MEV Finale.Misure"
+    } ]
+  }
+}

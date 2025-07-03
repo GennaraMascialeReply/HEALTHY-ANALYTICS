@@ -1,0 +1,63 @@
+{
+  "physicalTable" : {
+    "name" : "VST_MEV_FINALE",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ANNO",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : false
+    }, {
+      "name" : "AZIENDA",
+      "dataType" : "VARCHAR",
+      "length" : 400,
+      "nullable" : false
+    }, {
+      "name" : "PERIODO",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : false
+    }, {
+      "name" : "SOMMA_MEV_BEP",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "SOMMA_MEV_CET",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "AREA",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : false
+    }, {
+      "name" : "PERC_OBT",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "VALORE_PER_AREA_BEP",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "VALORE_PER_AREA_CET",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "VALORE_BEP_ANNO",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "PERC_COMP",
+      "dataType" : "FLOAT",
+      "length" : 0,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "ANNO", "AREA", "AZIENDA", "PERIODO" ] ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "presentationTable" : {
+    "name" : "Centro di Costo",
+    "presentationColumns" : [ {
+      "name" : "Codice Centro di Costo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Codice Centro di Costo"
+    }, {
+      "name" : "Descrizione Centro di Costo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Descrizione Centro di Costo"
+    }, {
+      "name" : "Livello 1",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Livello 1"
+    }, {
+      "name" : "Livello 2",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Livello 2"
+    }, {
+      "name" : "Livello 3",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Livello 3"
+    }, {
+      "name" : "Livello 4",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Livello 4"
+    }, {
+      "name" : "Centro di Costo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Centro di Costo"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Centro Di Costo LA",
+      "sourceLogicalTable" : "logicalTable:AZ0 - TEST.Dim Centro di Costo LA",
+      "levels" : [ {
+        "name" : "Livello 4",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Centro di Costo LA.Livello 4"
+      }, {
+        "name" : "Livello 3",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Centro di Costo LA.Livello 3",
+        "displayColumn" : "presentationColumn:LA EPM.Centro di Costo.Livello 3"
+      }, {
+        "name" : "Livello 2",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Centro di Costo LA.Livello 2",
+        "displayColumn" : "presentationColumn:LA EPM.Centro di Costo.Livello 2"
+      }, {
+        "name" : "Livello 1",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Centro di Costo LA.Livello 1",
+        "displayColumn" : "presentationColumn:LA EPM.Centro di Costo.Livello 1"
+      }, {
+        "name" : "Centro di Costo",
+        "sourceLogicalLevel" : "logicalLevel:AZ0 - TEST.Dim Centro di Costo LA.Centro di Costo",
+        "displayColumn" : "presentationColumn:LA EPM.Centro di Costo.Centro di Costo"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Attributi",
+    "presentationColumns" : [ {
+      "name" : "Anno",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact MEV Finale.Anno"
+    }, {
+      "name" : "Area",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact MEV Finale.Area"
+    }, {
+      "name" : "Percentuale Obiettivo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact MEV Finale.Percentuale Obiettivo"
+    }, {
+      "name" : "Periodo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact MEV Finale.Periodo"
+    }, {
+      "name" : "Percentuale Completamento",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact MEV Finale.Percentuale Completamento"
+    } ]
+  }
+}

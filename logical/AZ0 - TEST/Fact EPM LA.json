@@ -1,0 +1,97 @@
+{
+  "logicalTable" : {
+    "name" : "Fact EPM LA",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Allocazione",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact EPM LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact EPM LA.ALLOCAZIONE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Importo",
+      "dataType" : "FLOAT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact EPM LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact EPM LA.IMPORTO" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "PCM Balance",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact EPM LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact EPM LA.PCM_BALANCE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PCM Rule",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact EPM LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Fact EPM LA.PCM_RULE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact EPM LA",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:AZ0 - TEST.EPM_TEST.Fact EPM LA" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:AZ0 - TEST.Dim Anno",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE",
+      "drivingTable" : "logicalTable:AZ0 - TEST.Fact EPM LA"
+    }, {
+      "rightTable" : "logicalTable:AZ0 - TEST.Dim Aziende",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE",
+      "drivingTable" : "logicalTable:AZ0 - TEST.Fact EPM LA"
+    }, {
+      "rightTable" : "logicalTable:AZ0 - TEST.Dim Centro di Costo LA",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE",
+      "drivingTable" : "logicalTable:AZ0 - TEST.Fact EPM LA"
+    }, {
+      "rightTable" : "logicalTable:AZ0 - TEST.Dim Fattore Produttivo LA - ridotto",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE",
+      "drivingTable" : "logicalTable:AZ0 - TEST.Fact EPM LA"
+    } ]
+  }
+}

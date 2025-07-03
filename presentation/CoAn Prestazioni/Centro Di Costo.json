@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Centro Di Costo",
+    "presentationColumns" : [ {
+      "name" : "Codice Centro diCosto",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Centro di Costo.Codice Centro diCosto"
+    }, {
+      "name" : "Descrizione Centro di Costo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Centro di Costo.Descrizione Centro di Costo"
+    }, {
+      "name" : "Macro Tipo Centro di Costo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Centro di Costo.Macro Tipo Centro di Costo"
+    }, {
+      "name" : "Tipo Centro di Costo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Centro di Costo.Tipo Centro di Costo"
+    } ]
+  }
+}

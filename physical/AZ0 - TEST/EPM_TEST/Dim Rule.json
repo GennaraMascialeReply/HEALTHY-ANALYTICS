@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Rule",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.TAB_DIM_RULE",
+    "additionalKeys": [
+      [
+        "RULENAME"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "subjectArea" : {
+    "name" : "BEP",
+    "sourceBusinessModel" : "businessModel:AZ0 - TEST",
+    "tableOrder" : [ {
+      "name" : "presentationTable:BEP.Gerarchia Conti"
+    }, {
+      "name" : "presentationTable:BEP.Misure"
+    }, {
+      "name" : "presentationTable:BEP.Attributi"
+    }, {
+      "name" : "presentationTable:BEP.Azienda"
+    }, {
+      "name" : "presentationTable:BEP.Dettaglio Inclusione"
+    } ]
+  }
+}

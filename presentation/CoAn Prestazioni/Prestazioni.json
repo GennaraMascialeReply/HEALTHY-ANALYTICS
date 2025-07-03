@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Prestazioni",
+    "presentationColumns" : [ {
+      "name" : "Codice Prestazione",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Prestazioni.Codice Prestazione"
+    }, {
+      "name" : "Descrizione Prestazione",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Prestazioni.Descrizione Prestazione"
+    }, {
+      "name" : "Data fine validita",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Prestazioni.Data fine validita"
+    }, {
+      "name" : "Data inizio validita",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Prestazioni.Data inizio validita"
+    } ]
+  }
+}

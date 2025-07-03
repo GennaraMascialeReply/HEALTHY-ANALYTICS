@@ -1,0 +1,17 @@
+{
+  "subjectArea" : {
+    "name" : "LA EPM",
+    "sourceBusinessModel" : "businessModel:AZ0 - TEST",
+    "tableOrder" : [ {
+      "name" : "presentationTable:LA EPM.Data"
+    }, {
+      "name" : "presentationTable:LA EPM.Centro di Costo"
+    }, {
+      "name" : "presentationTable:LA EPM.Fattore Produttivo"
+    }, {
+      "name" : "presentationTable:LA EPM.Misure&Attributi"
+    }, {
+      "name" : "presentationTable:LA EPM.Azienda"
+    } ]
+  }
+}

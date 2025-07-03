@@ -1,0 +1,26 @@
+{
+  "presentationTable" : {
+    "name" : "Misure&Attributi",
+    "presentationColumns" : [ {
+      "name" : "Allocazione",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact Allocazione LA.Allocazione"
+    }, {
+      "name" : "Importo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact Allocazione LA.Importo"
+    }, {
+      "name" : "PCM Balance",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact Allocazione LA.PCM Balance"
+    }, {
+      "name" : "PCM Rule",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact Allocazione LA.PCM Rule"
+    } ],
+    "dataFilters" : [ {
+      "accessor" : "role:Segregazione Azienda",
+      "status" : "ENABLED",
+      "filter" : {
+        "expressionTemplate" : "%1 =  VALUEOF(NQ_SESSION.%2)",
+        "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Aziende.Codice Azienda", "variable:GET_AZIENDA_SESS_VAR.AZIENDA" ]
+      }
+    } ]
+  }
+}

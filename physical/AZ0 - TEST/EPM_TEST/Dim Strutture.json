@@ -1,0 +1,18 @@
+{
+  "physicalTable": {
+    "name": "Dim Strutture",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.TAB_STRUTTURE_REG_DIM",
+    "additionalKeys": [
+      [
+        "COD_AZIENDA"
+      ],
+      [
+        "COD_STRUTTURA"
+      ],
+      [
+        "COD_AZIENDA",
+        "COD_STRUTTURA"
+      ]
+    ]
+  }
+}

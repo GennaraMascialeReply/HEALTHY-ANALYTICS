@@ -1,0 +1,38 @@
+{
+  "physicalTable" : {
+    "name" : "TAB_GERARCHIA_FP_LA",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "FP_LIV1",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : false
+    }, {
+      "name" : "FP_LIV2",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : false
+    }, {
+      "name" : "FP_LIV3",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV1",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV2",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP_LIV3",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "FP_LIV1" ] ]
+  }
+}

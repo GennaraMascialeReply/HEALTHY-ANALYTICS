@@ -1,0 +1,21 @@
+{
+  "subjectArea" : {
+    "name" : "CoAn Costi",
+    "sourceBusinessModel" : "businessModel:AZ0 - TEST",
+    "tableOrder" : [ {
+      "name" : "presentationTable:CoAn Costi.Azienda"
+    }, {
+      "name" : "presentationTable:CoAn Costi.Centro di Costo"
+    }, {
+      "name" : "presentationTable:CoAn Costi.Specialita"
+    }, {
+      "name" : "presentationTable:CoAn Costi.Fattore Produttivo"
+    }, {
+      "name" : "presentationTable:CoAn Costi.Misure"
+    }, {
+      "name" : "presentationTable:CoAn Costi.Data"
+    }, {
+      "name" : "presentationTable:CoAn Costi.Struttura"
+    } ]
+  }
+}

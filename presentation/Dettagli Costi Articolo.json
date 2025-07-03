@@ -1,0 +1,19 @@
+{
+  "subjectArea" : {
+    "name" : "Dettagli Costi Articolo",
+    "sourceBusinessModel" : "businessModel:503 - Test",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Dettagli Costi Articolo.Anno"
+    }, {
+      "name" : "presentationTable:Dettagli Costi Articolo.Misure"
+    }, {
+      "name" : "presentationTable:Dettagli Costi Articolo.Articolo"
+    }, {
+      "name" : "presentationTable:Dettagli Costi Articolo.Centro di Costo"
+    }, {
+      "name" : "presentationTable:Dettagli Costi Articolo.Fattore Produttivo"
+    }, {
+      "name" : "presentationTable:Dettagli Costi Articolo.Fonte"
+    } ]
+  }
+}

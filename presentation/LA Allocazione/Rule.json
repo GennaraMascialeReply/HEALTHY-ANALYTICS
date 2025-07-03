@@ -1,0 +1,126 @@
+{
+  "presentationTable" : {
+    "name" : "Rule",
+    "presentationColumns" : [ {
+      "name" : "Allocated Amount",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Allocated Amount"
+    }, {
+      "name" : "Allocated Amount Type",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Allocated Amount Type"
+    }, {
+      "name" : "Calculation Segmentation",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Calculation Segmentation"
+    }, {
+      "name" : "Destination Account",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Destination Account"
+    }, {
+      "name" : "Destination Allocazione",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Destination Allocazione"
+    }, {
+      "name" : "Destination Centro di Cosot",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Destination Centro di Cosot"
+    }, {
+      "name" : "Destination Driver",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Destination Driver"
+    }, {
+      "name" : "Destination Entity",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Destination Entity"
+    }, {
+      "name" : "Destination Progressivo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Destination Progressivo"
+    }, {
+      "name" : "Destination Specialitàà",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Destination Specialitàà"
+    }, {
+      "name" : "Destination Struttura",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Destination Struttura"
+    }, {
+      "name" : "Dimensions Ordinal",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Dimensions Ordinal"
+    }, {
+      "name" : "Drv Selection",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Drv Selection"
+    }, {
+      "name" : "Drv Account",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Drv Account"
+    }, {
+      "name" : "Drv Allocazione",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Drv Allocazione"
+    }, {
+      "name" : "Drv Centro di Costo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Drv Centro di Costo"
+    }, {
+      "name" : "Drv Driver",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Drv Driver"
+    }, {
+      "name" : "Drv Entity",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Drv Entity"
+    }, {
+      "name" : "Drv Progressivo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Drv Progressivo"
+    }, {
+      "name" : "Drv Specialità",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Drv Specialità"
+    }, {
+      "name" : "Drv Struttura",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Drv Struttura"
+    }, {
+      "name" : "Enabled",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Enabled"
+    }, {
+      "name" : "Offset Location",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Offset Location"
+    }, {
+      "name" : "Rule Description",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Rule Description"
+    }, {
+      "name" : "Rule Doc Ordinal",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Rule Doc Ordinal"
+    }, {
+      "name" : "Rule Name",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Rule Name"
+    }, {
+      "name" : "Rule Name Ordinal",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Rule Name Ordinal"
+    }, {
+      "name" : "Rules Ordinal",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Rules Ordinal"
+    }, {
+      "name" : "Rule Type",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Rule Type"
+    }, {
+      "name" : "Segment By",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Segment By"
+    }, {
+      "name" : "Sequence",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Sequence"
+    }, {
+      "name" : "Source Account",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Source Account"
+    }, {
+      "name" : "Source Allocazione",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Source Allocazione"
+    }, {
+      "name" : "Source Cento di Costo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Source Cento di Costo"
+    }, {
+      "name" : "Source Driver",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Source Driver"
+    }, {
+      "name" : "Source Entity",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Source Entity"
+    }, {
+      "name" : "Source Progressivo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Source Progressivo"
+    }, {
+      "name" : "Source Specialità",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Source Specialità"
+    }, {
+      "name" : "Source Struttura",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Source Struttura"
+    }, {
+      "name" : "Useruleset Context",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Rule.Useruleset Context"
+    } ]
+  }
+}

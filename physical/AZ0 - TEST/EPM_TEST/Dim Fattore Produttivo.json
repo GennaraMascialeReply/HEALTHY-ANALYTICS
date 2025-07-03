@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Fattore Produttivo",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.TAB_FP_COAN_REG_DIM",
+    "additionalKeys": [
+      [
+        "COD_FP_COAN"
+      ]
+    ]
+  }
+}

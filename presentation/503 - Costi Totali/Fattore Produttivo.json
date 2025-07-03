@@ -1,0 +1,83 @@
+{
+  "presentationTable" : {
+    "name" : "Fattore Produttivo",
+    "presentationColumns" : [ {
+      "name" : "Fattore Produttivo",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Costi Totali.Fattore Produttivo"
+    }, {
+      "name" : "Fattore Produttivo#1",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo"
+    }, {
+      "name" : "Fattore Produttivo - Livello 1",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 1"
+    }, {
+      "name" : "Fattore Produttivo - Livello 2",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 2"
+    }, {
+      "name" : "Fattore Produttivo - Livello 3",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 3"
+    }, {
+      "name" : "Fattore Produttivo - Livello 4",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 4"
+    }, {
+      "name" : "Fattore Produttivo - Livello 5",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 5"
+    }, {
+      "name" : "Fattore Produttivo - Livello 6",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 6"
+    }, {
+      "name" : "Fattore Produttivo - Livello 7",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 7"
+    }, {
+      "name" : "Fattore Produttivo - Livello 8",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 8"
+    }, {
+      "name" : "Fattore Produttivo - Livello 9",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 9"
+    }, {
+      "name" : "Descrizione Fattore Produttivo",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Fattore Produttivo - Anagrafica.Descrizione Fattore Produttivo"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Gerachia Fattore Produttivo",
+      "sourceLogicalTable" : "logicalTable:503 - Test.Dim Fattore Produttivo",
+      "levels" : [ {
+        "name" : "Fattore Produttivo - Livello 1",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 1",
+        "displayColumn" : "presentationColumn:503 - Costi Totali.Fattore Produttivo.Fattore Produttivo - Livello 1"
+      }, {
+        "name" : "Fattore Produttivo - Livello 2",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 2",
+        "displayColumn" : "presentationColumn:503 - Costi Totali.Fattore Produttivo.Fattore Produttivo - Livello 2"
+      }, {
+        "name" : "Fattore Produttivo - Livello 3",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 3",
+        "displayColumn" : "presentationColumn:503 - Costi Totali.Fattore Produttivo.Fattore Produttivo - Livello 3"
+      }, {
+        "name" : "Fattore Produttivo - Livello 4",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 4",
+        "displayColumn" : "presentationColumn:503 - Costi Totali.Fattore Produttivo.Fattore Produttivo - Livello 4"
+      }, {
+        "name" : "Fattore Produttivo - Livello 5",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 5",
+        "displayColumn" : "presentationColumn:503 - Costi Totali.Fattore Produttivo.Fattore Produttivo - Livello 5"
+      }, {
+        "name" : "Fattore Produttivo - Livello 6",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 6",
+        "displayColumn" : "presentationColumn:503 - Costi Totali.Fattore Produttivo.Fattore Produttivo - Livello 6"
+      }, {
+        "name" : "Fattore Produttivo - Livello 7",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 7",
+        "displayColumn" : "presentationColumn:503 - Costi Totali.Fattore Produttivo.Fattore Produttivo - Livello 7"
+      }, {
+        "name" : "Fattore Produttivo - Livello 8",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 8",
+        "displayColumn" : "presentationColumn:503 - Costi Totali.Fattore Produttivo.Fattore Produttivo - Livello 8"
+      }, {
+        "name" : "Fattore Produttivo - Livello 9",
+        "sourceLogicalLevel" : "logicalLevel:503 - Test.Dim Fattore Produttivo.Fattore Produttivo - Livello 9",
+        "displayColumn" : "presentationColumn:503 - Costi Totali.Fattore Produttivo.Fattore Produttivo - Livello 9"
+      } ]
+    } ]
+  }
+}

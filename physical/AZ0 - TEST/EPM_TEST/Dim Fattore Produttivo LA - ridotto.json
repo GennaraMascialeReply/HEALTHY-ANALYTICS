@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Fattore Produttivo LA - ridotto",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.TAB_FP_LA",
+    "additionalKeys": [
+      [
+        "FP"
+      ]
+    ]
+  }
+}

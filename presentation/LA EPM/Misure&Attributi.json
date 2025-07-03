@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Misure&Attributi",
+    "presentationColumns" : [ {
+      "name" : "Importo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact EPM LA.Importo"
+    }, {
+      "name" : "Allocazione",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact EPM LA.Allocazione"
+    }, {
+      "name" : "PCM Balance",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact EPM LA.PCM Balance"
+    }, {
+      "name" : "PCM Rule",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact EPM LA.PCM Rule"
+    } ]
+  }
+}

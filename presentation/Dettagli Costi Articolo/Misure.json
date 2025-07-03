@@ -1,0 +1,15 @@
+{
+  "presentationTable" : {
+    "name" : "Misure",
+    "presentationColumns" : [ {
+      "name" : "Importo PTD",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Dettaglio Costi Articolo.Importo PTD"
+    }, {
+      "name" : "Importo YTD",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Dettaglio Costi Articolo.Importo YTD"
+    }, {
+      "name" : "Quantità",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Dettaglio Costi Articolo.Quantità"
+    } ]
+  }
+}

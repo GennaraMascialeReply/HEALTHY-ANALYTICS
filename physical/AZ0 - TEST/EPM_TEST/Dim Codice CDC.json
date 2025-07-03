@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Dim Codice CDC",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.TAB_CDC_REG_DIM",
+    "additionalKeys": [
+      [
+        "COD_CDC"
+      ]
+    ]
+  }
+}

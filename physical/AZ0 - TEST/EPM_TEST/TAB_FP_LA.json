@@ -1,0 +1,33 @@
+{
+  "physicalTable" : {
+    "name" : "TAB_FP_LA",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "FP",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "DESC_FP",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : false
+    }, {
+      "name" : "ORDINE",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : false
+    }, {
+      "name" : "FP_P",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_ANAL",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "FP" ] ]
+  }
+}

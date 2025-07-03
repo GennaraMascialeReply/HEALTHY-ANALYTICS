@@ -1,0 +1,20 @@
+{
+  "initBlock" : {
+    "name" : "GET_AZIENDA_SESS_VAR",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:AZ0 - TEST.init_blocks_cp",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT r.COD_AZIENDA_VISIBILE\r\nFROM EPM_TEST.AZ0_staff_login l, EPM_TEST.AZ0_staff_AZIENDA r\r\nWHERE l.login_name = r.login_name\r\n    AND l.login_name = ':USER' "
+    } ],
+    "variables" : [ {
+      "name" : "AZIENDA",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Anno",
+    "presentationColumns" : [ {
+      "name" : "Anno",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Costi Totali.Anno"
+    }, {
+      "name" : "Mese",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Costi Totali.Mese"
+    }, {
+      "name" : "Descrizione Mese",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Mese.Descrizione Mese"
+    }, {
+      "name" : "Trimestre",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Dim Mese.Trimestre"
+    } ]
+  }
+}

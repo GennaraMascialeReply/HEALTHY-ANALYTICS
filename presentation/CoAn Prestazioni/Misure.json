@@ -1,0 +1,12 @@
+{
+  "presentationTable" : {
+    "name" : "Misure",
+    "presentationColumns" : [ {
+      "name" : "Numero Prestazioni",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact Prestazioni.Numero Prestazioni"
+    }, {
+      "name" : "Valore Prestazioni",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact Prestazioni.Valore Prestazioni"
+    } ]
+  }
+}

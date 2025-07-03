@@ -1,0 +1,15 @@
+{
+  "physicalTable": {
+    "name": "Dim Percentuali Inclusione",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.TAB_PERC_CONTI",
+    "additionalKeys": [
+      [
+        "AZIENDA",
+        "CODICE_CONTO"
+      ],
+      [
+        "AZIENDA"
+      ]
+    ]
+  }
+}

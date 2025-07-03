@@ -1,0 +1,15 @@
+{
+  "presentationTable" : {
+    "name" : "Articolo",
+    "presentationColumns" : [ {
+      "name" : "Articolo",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Dettaglio Costi Articolo.Articolo"
+    }, {
+      "name" : "Classe Merceologica",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Dettaglio Costi Articolo.Classe Merceologica"
+    }, {
+      "name" : "Descrizione Articolo",
+      "sourceLogicalColumn" : "logicalColumn:503 - Test.Fact Dettaglio Costi Articolo.Descrizione Articolo"
+    } ]
+  }
+}

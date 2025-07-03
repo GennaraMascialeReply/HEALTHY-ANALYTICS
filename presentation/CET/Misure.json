@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Misure",
+    "presentationColumns" : [ {
+      "name" : "Valore CET PTD",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact CET.Valore CET PTD"
+    }, {
+      "name" : "Valore CET YTD",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact CET.Valore CET YTD"
+    }, {
+      "name" : "Valore MEV PTD",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact CET.Valore MEV PTD"
+    }, {
+      "name" : "Valore MEV YTD",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact CET.Valore MEV YTD"
+    } ]
+  }
+}

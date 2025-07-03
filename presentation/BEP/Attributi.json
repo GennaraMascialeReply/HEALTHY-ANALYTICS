@@ -1,0 +1,24 @@
+{
+  "presentationTable" : {
+    "name" : "Attributi",
+    "presentationColumns" : [ {
+      "name" : "Anno",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact BEP.Anno"
+    }, {
+      "name" : "Bilancio",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact BEP.Bilancio"
+    }, {
+      "name" : "Flusso",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact BEP.Flusso"
+    }, {
+      "name" : "Periodo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact BEP.Periodo"
+    }, {
+      "name" : "Periodo Acquisizione",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact BEP.Periodo Acquisizione"
+    }, {
+      "name" : "Padre Figlio",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Fact BEP.Padre Figlio"
+    } ]
+  }
+}

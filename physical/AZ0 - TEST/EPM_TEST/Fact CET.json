@@ -1,0 +1,44 @@
+{
+  "physicalTable": {
+    "name": "Fact CET",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.VST_MEV_CET",
+    "joins": [      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Aziende",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact CET.AZIENDA",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Aziende.COD_AZIENDA"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact CET.COD_CONTO",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Gerarchia Conti.CODICE_CONTO"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Percentuali Inclusione",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact CET.AZIENDA",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Percentuali Inclusione.AZIENDA"
+          },
+          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact CET.COD_CONTO",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Percentuali Inclusione.CODICE_CONTO"
+          }
+        ]
+      }
+    ],
+    "additionalKeys": [
+      [
+        "ANNO",
+        "AZIENDA",
+        "COD_CONTO",
+        "PERIOD",
+        "PERIODO_ACQUISIZIONE"
+      ]
+    ]
+  }
+}

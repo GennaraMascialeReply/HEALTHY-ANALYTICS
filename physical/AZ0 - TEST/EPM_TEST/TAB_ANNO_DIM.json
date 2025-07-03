@@ -1,0 +1,13 @@
+{
+  "physicalTable" : {
+    "name" : "TAB_ANNO_DIM",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ANNO",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "ANNO" ] ]
+  }
+}

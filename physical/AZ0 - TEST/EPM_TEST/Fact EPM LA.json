@@ -1,0 +1,47 @@
+{
+  "physicalTable": {
+    "name": "Fact EPM LA",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.VST_EPM_LA",
+    "joins": [      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Anno",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact EPM LA.YEARS",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Anno.ANNO"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Aziende",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact EPM LA.ENTITY",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Aziende.COD_AZIENDA"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact EPM LA.CDC",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.CDC"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA - ridotto",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact EPM LA.ACCOUNT",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Fattore Produttivo LA - ridotto.FP"
+          }
+        ]
+      }
+    ],
+    "additionalKeys": [
+      [
+        "ACCOUNT",
+        "CDC",
+        "PCM_BALANCE",
+        "YEARS"
+      ]
+    ]
+  }
+}

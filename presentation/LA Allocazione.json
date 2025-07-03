@@ -1,0 +1,17 @@
+{
+  "subjectArea" : {
+    "name" : "LA Allocazione",
+    "sourceBusinessModel" : "businessModel:AZ0 - TEST",
+    "tableOrder" : [ {
+      "name" : "presentationTable:LA Allocazione.Data"
+    }, {
+      "name" : "presentationTable:LA Allocazione.Centro di Costo"
+    }, {
+      "name" : "presentationTable:LA Allocazione.Misure&Attributi"
+    }, {
+      "name" : "presentationTable:LA Allocazione.Azienda"
+    }, {
+      "name" : "presentationTable:LA Allocazione.Rule"
+    } ]
+  }
+}

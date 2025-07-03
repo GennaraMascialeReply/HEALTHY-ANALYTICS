@@ -1,0 +1,23 @@
+{
+  "presentationTable" : {
+    "name" : "Azienda",
+    "presentationColumns" : [ {
+      "name" : "Codice Azienda",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Aziende.Codice Azienda"
+    }, {
+      "name" : "Descrizione Azienda",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Aziende.Descrizione Azienda"
+    }, {
+      "name" : "Azienda",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Aziende.Azienda"
+    } ],
+    "dataFilters" : [ {
+      "accessor" : "role:Segregazione Azienda",
+      "status" : "ENABLED",
+      "filter" : {
+        "expressionTemplate" : "%1 =  VALUEOF(NQ_SESSION.%2)",
+        "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Aziende.Codice Azienda", "variable:GET_AZIENDA_SESS_VAR.AZIENDA" ]
+      }
+    } ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "physicalTable" : {
+    "name" : "TCN_HCDC_GERARCHIA_CDC",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COD_CDC_LIV1",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "DESC_CDC_LIV1",
+      "dataType" : "VARCHAR",
+      "length" : 2000,
+      "nullable" : false
+    }, {
+      "name" : "COD_CDC_LIV2",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "COD_CDC_LIV3",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "COD_CDC_LIV4",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "COD_CDC_LIV5",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "COD_CDC_LIV6",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "COD_CDC_LIV7",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : false
+    }, {
+      "name" : "DESC_CDC_LIV2",
+      "dataType" : "VARCHAR",
+      "length" : 5000,
+      "nullable" : false
+    }, {
+      "name" : "DESC_CDC_LIV3",
+      "dataType" : "VARCHAR",
+      "length" : 5000,
+      "nullable" : false
+    }, {
+      "name" : "DESC_CDC_LIV4",
+      "dataType" : "VARCHAR",
+      "length" : 5000,
+      "nullable" : false
+    }, {
+      "name" : "DESC_CDC_LIV5",
+      "dataType" : "VARCHAR",
+      "length" : 5000,
+      "nullable" : false
+    }, {
+      "name" : "DESC_CDC_LIV6",
+      "dataType" : "VARCHAR",
+      "length" : 5000,
+      "nullable" : false
+    }, {
+      "name" : "DESC_CDC_LIV7",
+      "dataType" : "VARCHAR",
+      "length" : 5000,
+      "nullable" : false
+    }, {
+      "name" : "TIPO_CDC",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    } ]
+  }
+}

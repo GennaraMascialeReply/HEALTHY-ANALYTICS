@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Fattore Produttivo",
+    "presentationColumns" : [ {
+      "name" : "Ordinamento",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA - ridotto.Ordinamento"
+    }, {
+      "name" : "Fattore Produttivo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA - ridotto.Fattore Produttivo"
+    }, {
+      "name" : "Codice Fattore Produttivo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA - ridotto.Codice Fattore Produttivo"
+    }, {
+      "name" : "Descrizione Fattore Produttivo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo LA - ridotto.Descrizione Fattore Produttivo"
+    } ]
+  }
+}

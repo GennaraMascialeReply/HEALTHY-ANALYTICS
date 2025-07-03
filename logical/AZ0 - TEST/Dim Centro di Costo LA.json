@@ -1,0 +1,264 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Centro di Costo LA",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Codice Centro di Costo" ],
+    "logicalColumns" : [ {
+      "name" : "Codice Centro di Costo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Centro di Costo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.CDC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Centro di Costo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Centro di Costo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.DESCRIZIONE_LIVELLO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Livello 1 LA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Centro di Costo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.LIV1_LA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Livello 1 LA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Centro di Costo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.LIV1_LA_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Livello 2 LA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Centro di Costo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.LIV2_LA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Livello 2 LA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Centro di Costo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.LIV2_LA_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Livello 3 LA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Centro di Costo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.LIV3_LA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Livello 3 LA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Centro di Costo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.LIV3_LA_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Livello 4 LA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Centro di Costo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.LIV4_LA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Descrizione Livello 4 LA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Centro di Costo LA",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA.LIV4_LA_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Livello 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || '- ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Livello 1 LA", "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Descrizione Livello 1 LA" ]
+        }
+      },
+      "logicalLevel" : "Livello 1"
+    }, {
+      "name" : "Livello 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Livello 2 LA", "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Descrizione Livello 2 LA" ]
+        }
+      },
+      "logicalLevel" : "Livello 2"
+    }, {
+      "name" : "Livello 3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Livello 3 LA", "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Descrizione Livello 3 LA" ]
+        }
+      },
+      "logicalLevel" : "Livello 3"
+    }, {
+      "name" : "Livello 4",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Livello 4 LA", "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Descrizione Livello 4 LA" ]
+        }
+      },
+      "logicalLevel" : "Livello 4"
+    }, {
+      "name" : "Centro di Costo",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 || ' - ' || %2",
+          "expressionObjects" : [ "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Codice Centro di Costo", "logicalColumn:AZ0 - TEST.Dim Centro di Costo LA.Descrizione Centro di Costo" ]
+        }
+      },
+      "logicalLevel" : "Centro di Costo"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Centro di Costo LA",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:AZ0 - TEST.EPM_TEST.Dim Centro di Costo LA" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Livello 4",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Livello 4",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Livello 4" ],
+        "displayKey" : "Livello 4"
+      }, {
+        "name" : "Livello 3",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Livello 3" ],
+        "displayKey" : "Livello 3"
+      }, {
+        "name" : "Livello 2",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Livello 2" ],
+        "displayKey" : "Livello 2"
+      }, {
+        "name" : "Livello 1",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Livello 1" ],
+        "displayKey" : "Livello 1"
+      }, {
+        "name" : "Centro di Costo",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Centro di Costo" ],
+        "displayKey" : "Centro di Costo"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Centro Di Costo LA",
+        "levels" : [ "Livello 4", "Livello 3", "Livello 2", "Livello 1", "Centro di Costo" ]
+      } ]
+    }
+  }
+}

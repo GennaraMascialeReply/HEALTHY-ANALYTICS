@@ -1,0 +1,27 @@
+{
+  "physicalTable" : {
+    "name" : "TAB_SPS_TAB_PRESTAZIONI",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COD_PRESTAZIONE",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "DESCRZIONE",
+      "dataType" : "VARBINARY",
+      "length" : 1000,
+      "nullable" : false
+    }, {
+      "name" : "DATA_IN_VAL",
+      "dataType" : "DATE",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "DATA_FI_VAL",
+      "dataType" : "DATE",
+      "length" : 0,
+      "nullable" : false
+    } ]
+  }
+}

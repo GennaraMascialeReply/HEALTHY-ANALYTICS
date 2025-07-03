@@ -1,0 +1,23 @@
+{
+  "physicalTable": {
+    "name": "Fact MEV Finale",
+    "sourceTable": "physicalTable:AZ0 - TEST.EPM_TEST.VST_MEV_FINALE",
+    "joins": [      {
+        "rightTable": "physicalTable:AZ0 - TEST.EPM_TEST.Dim Aziende",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Fact MEV Finale.AZIENDA",
+            "rightColumn": "physicalColumn:AZ0 - TEST.EPM_TEST.Dim Aziende.COD_AZIENDA"
+          }
+        ]
+      }
+    ],
+    "additionalKeys": [
+      [
+        "ANNO",
+        "AREA",
+        "AZIENDA",
+        "PERIODO"
+      ]
+    ]
+  }
+}

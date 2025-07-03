@@ -1,0 +1,28 @@
+{
+  "physicalTable" : {
+    "name" : "TAB_STRUTTURE_REG_DIM",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COD_AZIENDA",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "COD_STRUTTURA",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "DESCRIZIONE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : false
+    }, {
+      "name" : "MACRO_CLASSIFICAZIONE_PSSR",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "COD_AZIENDA" ], [ "COD_STRUTTURA" ] ]
+  }
+}

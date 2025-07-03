@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Fattore Produttivo",
+    "presentationColumns" : [ {
+      "name" : "Codice Fattore Produttivo",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo.Codice Fattore Produttivo"
+    }, {
+      "name" : "Codice Fattore Produttivo - Livello 1",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo.Codice Fattore Produttivo - Livello 1"
+    }, {
+      "name" : "Codice Fattore Produttivo - Livello2",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo.Codice Fattore Produttivo - Livello2"
+    }, {
+      "name" : "Codice Fattore Produttivo - Livello 3",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo.Codice Fattore Produttivo - Livello 3"
+    }, {
+      "name" : "Codice Fattore Produttivo - Livello 4",
+      "sourceLogicalColumn" : "logicalColumn:AZ0 - TEST.Dim Fattore Produttivo.Codice Fattore Produttivo - Livello 4"
+    } ]
+  }
+}
